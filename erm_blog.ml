@@ -16,7 +16,7 @@ let default_page content =
     (body content)
 
 let srv_home_handler () () =
-  return (default_page [])
+  return (default_page [p [pcdata "Hello, world!"]])
 
 let _ =
   Eliom_output.Html5.register ~service:srv_home srv_home_handler
