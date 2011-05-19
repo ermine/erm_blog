@@ -1,0 +1,7 @@
+# OASIS_START
+# DO NOT EDIT (digest: 3eb050013b7c7f43c549ef06b09d2ae2)
+# Library erm_blog
+<*.ml{,i}>: pkg_threads
+<*.ml{,i}>: pkg_ocsigenserver
+<*.ml{,i}>: pkg_eliom.server
+# OASIS_STOP

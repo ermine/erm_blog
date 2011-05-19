@@ -1,0 +1,10 @@
+# OASIS_START
+# DO NOT EDIT (digest: 297844d7e605b01de6766e640d9bbe7a)
+version = "0.1"
+description = "Web Blog based on Ocsigen/Eliom"
+requires = "threads ocsigenserver eliom.server"
+archive(byte) = "erm_blog.cma"
+archive(native) = "erm_blog.cmxa"
+exists_if = "erm_blog.cma"
+# OASIS_STOP
+

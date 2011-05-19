@@ -1,0 +1,16 @@
+OASISFormat: 0.2
+Name:        erm_blog
+Version:     0.1
+Synopsis:    Web Blog based on Ocsigen/Eliom
+Authors:     Anastasia Gornostaeva
+License:     BSD3
+Plugins:     META (0.2)
+OCamlVersion: >= 3.12
+BuildTools:  ocamlbuild
+
+Library erm_blog
+  Path:    .
+  Modules: Erm_blog
+  BuildDepends: threads, ocsigenserver, eliom.server
+
+
