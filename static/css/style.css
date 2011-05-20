@@ -1,0 +1,45 @@
+/* Layout */
+
+body {
+  margin: 0;
+  width: 100%;
+}
+
+#login {
+  position: absolute;
+  width: 10em;
+  border: 0.8px solid blue;
+}
+
+#content {
+  margin-left: 20em;
+}
+
+#login label {
+  display: block;
+}
+
+#login input {
+  display: block;
+  width: 100%;
+}
+
+#login .submit {
+  display: block;
+  width: 5em;
+  margin: 5 auto;
+}
+
+/* Fonts */
+
+body {
+  font: 10pt Arial, Sans-Serif;
+}
+
+legend {
+  font-size: 120%;
+  padding-left: 5px;
+  border-bottom: 2px solid green;
+  width: 100%;
+}
+
