@@ -10,7 +10,7 @@ BuildTools:  ocamlbuild
 
 Library erm_blog
   Path:    .
-  Modules: Erm_blog
+  Modules: Erm_login, Erm_blog
   BuildDepends: threads, ocsigenserver, eliom.server
 
 
