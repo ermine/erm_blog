@@ -8,11 +8,16 @@ body {
 #login {
   position: absolute;
   width: 10em;
-  border: 0.8px solid blue;
 }
 
 #content {
+  position: relative;
   margin-left: 20em;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
 }
 
 #login label {
@@ -39,7 +44,14 @@ body {
 legend {
   font-size: 120%;
   padding-left: 5px;
-  border-bottom: 2px solid green;
-  width: 100%;
+  text-align: right;
+/*  width: 100%; */
 }
 
+fieldset {
+  border: 10px solid white;
+}
+
+#footer {
+  font-size: 80%;
+}
