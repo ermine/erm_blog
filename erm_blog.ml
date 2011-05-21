@@ -16,15 +16,16 @@ let srv_home =
 
 let default_page content =
   (Eliom_references.get users >>= function
-    | Some user -> return (pcdata user)
-    | None -> return (login_box ())
+    | Some user -> return [pcdata user;
+                           logout_box ()]
+    | None -> return [login_box ()]
   ) >>= fun login_box ->
   return (html (head (title (pcdata site_title)) [
     HTML5.M.link ~rel:[`Stylesheet]
       ~href:(HTML5.M.uri_of_string"./css/style.css") ()
   ])
             (body [
-              div ~a:[a_id "login"] [login_box];
+              div ~a:[a_id "login"] login_box;
       div ~a:[a_id "content"] content
 ]))
 
